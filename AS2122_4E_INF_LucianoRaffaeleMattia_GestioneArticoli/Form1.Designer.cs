@@ -42,6 +42,7 @@
             this.cmbVisualizzaArticoli = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnLista = new System.Windows.Forms.Button();
+            this.lblParentesi = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,11 +174,21 @@
             this.btnLista.Text = "...";
             this.btnLista.UseVisualStyleBackColor = true;
             // 
+            // lblParentesi
+            // 
+            this.lblParentesi.AutoSize = true;
+            this.lblParentesi.Location = new System.Drawing.Point(82, 287);
+            this.lblParentesi.Name = "lblParentesi";
+            this.lblParentesi.Size = new System.Drawing.Size(15, 15);
+            this.lblParentesi.TabIndex = 5;
+            this.lblParentesi.Text = "()";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblParentesi);
             this.Controls.Add(this.btnLista);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.cmbVisualizzaArticoli);
@@ -209,5 +220,6 @@
         private ComboBox cmbVisualizzaArticoli;
         private ListBox listBox1;
         private Button btnLista;
+        private Label lblParentesi;
     }
 }
