@@ -13,6 +13,11 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
         public string unitadimisura;
         public double prezzo;
 
+       
+       
+
+       
+
         public Articoli(string codice, string descrizione, string unitadimisura, double prezzo)
         { 
             this.codice = codice;
@@ -22,9 +27,13 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
 
         
         }
-        public string Codice {get};
-        public string Descrizione {get};
-        public string Unitadimisura { get};
-        public double Prezzo {get};
+        public string Codice { get { return codice; } }
+        public string Descrizione { get { return descrizione; } }
+        public string UnitaDiMisura { get { return unitadimisura; } }
+        public double Prezzo { get { return prezzo; } }
+        public string Visualizzati()
+        {
+            return $"{Descrizione} {UnitaDiMisura} {Prezzo} ({codice})";
+        }
     }
 }
