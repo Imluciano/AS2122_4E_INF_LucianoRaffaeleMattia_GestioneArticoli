@@ -6,6 +6,7 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
         public Form1()
         {
             InitializeComponent();
+            articoli = new Dictionary<string, Articoli>();
         }
 
        
@@ -20,6 +21,15 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
         }
 
         private void cmbVisualizzaArticoli_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnLista_Click(object sender, EventArgs e)
         {
 
         }

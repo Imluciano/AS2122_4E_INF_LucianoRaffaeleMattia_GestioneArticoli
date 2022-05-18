@@ -101,6 +101,7 @@
             this.btnAggiungi.TabIndex = 1;
             this.btnAggiungi.Text = "Aggiungi/modifica articolo";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // lblDescrizione
             // 
@@ -173,6 +174,7 @@
             this.btnLista.TabIndex = 4;
             this.btnLista.Text = "...";
             this.btnLista.UseVisualStyleBackColor = true;
+            this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
             // 
             // lblParentesi
             // 

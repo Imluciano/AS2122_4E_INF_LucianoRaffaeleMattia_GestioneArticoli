@@ -13,10 +13,6 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
         public string unitadimisura;
         public double prezzo;
 
-       
-       
-
-       
 
         public Articoli(string codice, string descrizione, string unitadimisura, double prezzo)
         { 
