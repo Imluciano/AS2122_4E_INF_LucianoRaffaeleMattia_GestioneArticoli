@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblCodice = new System.Windows.Forms.Label();
+            this.cmbUnitaDiMisura = new System.Windows.Forms.ComboBox();
+            this.txtPrezzo = new System.Windows.Forms.TextBox();
+            this.txtDescrizione = new System.Windows.Forms.TextBox();
+            this.txtCodice = new System.Windows.Forms.TextBox();
+            this.btnAggiungi = new System.Windows.Forms.Button();
             this.lblDescrizione = new System.Windows.Forms.Label();
             this.lblUnitadiMisura = new System.Windows.Forms.Label();
             this.lblPrezzo = new System.Windows.Forms.Label();
-            this.btnAggiungi = new System.Windows.Forms.Button();
+            this.lblCodice = new System.Windows.Forms.Label();
             this.lblArticoli = new System.Windows.Forms.Label();
-            this.txtCodice = new System.Windows.Forms.TextBox();
-            this.txtDescrizione = new System.Windows.Forms.TextBox();
-            this.txtPrezzo = new System.Windows.Forms.TextBox();
-            this.cmbUnitaDiMisura = new System.Windows.Forms.ComboBox();
             this.cmbVisualizzaArticoli = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnLista = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,14 +63,43 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dettagli articolo";
             // 
-            // lblCodice
+            // cmbUnitaDiMisura
             // 
-            this.lblCodice.AutoSize = true;
-            this.lblCodice.Location = new System.Drawing.Point(6, 31);
-            this.lblCodice.Name = "lblCodice";
-            this.lblCodice.Size = new System.Drawing.Size(44, 15);
-            this.lblCodice.TabIndex = 1;
-            this.lblCodice.Text = "Codice";
+            this.cmbUnitaDiMisura.FormattingEnabled = true;
+            this.cmbUnitaDiMisura.Location = new System.Drawing.Point(99, 105);
+            this.cmbUnitaDiMisura.Name = "cmbUnitaDiMisura";
+            this.cmbUnitaDiMisura.Size = new System.Drawing.Size(121, 23);
+            this.cmbUnitaDiMisura.TabIndex = 5;
+            // 
+            // txtPrezzo
+            // 
+            this.txtPrezzo.Location = new System.Drawing.Point(53, 138);
+            this.txtPrezzo.Name = "txtPrezzo";
+            this.txtPrezzo.Size = new System.Drawing.Size(100, 23);
+            this.txtPrezzo.TabIndex = 2;
+            // 
+            // txtDescrizione
+            // 
+            this.txtDescrizione.Location = new System.Drawing.Point(79, 65);
+            this.txtDescrizione.Name = "txtDescrizione";
+            this.txtDescrizione.Size = new System.Drawing.Size(100, 23);
+            this.txtDescrizione.TabIndex = 2;
+            // 
+            // txtCodice
+            // 
+            this.txtCodice.Location = new System.Drawing.Point(56, 31);
+            this.txtCodice.Name = "txtCodice";
+            this.txtCodice.Size = new System.Drawing.Size(100, 23);
+            this.txtCodice.TabIndex = 4;
+            // 
+            // btnAggiungi
+            // 
+            this.btnAggiungi.Location = new System.Drawing.Point(65, 170);
+            this.btnAggiungi.Name = "btnAggiungi";
+            this.btnAggiungi.Size = new System.Drawing.Size(150, 41);
+            this.btnAggiungi.TabIndex = 1;
+            this.btnAggiungi.Text = "Aggiungi/modifica articolo";
+            this.btnAggiungi.UseVisualStyleBackColor = true;
             // 
             // lblDescrizione
             // 
@@ -98,14 +128,14 @@
             this.lblPrezzo.TabIndex = 3;
             this.lblPrezzo.Text = "Prezzo";
             // 
-            // btnAggiungi
+            // lblCodice
             // 
-            this.btnAggiungi.Location = new System.Drawing.Point(65, 170);
-            this.btnAggiungi.Name = "btnAggiungi";
-            this.btnAggiungi.Size = new System.Drawing.Size(150, 41);
-            this.btnAggiungi.TabIndex = 1;
-            this.btnAggiungi.Text = "Aggiungi/modifica articolo";
-            this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.lblCodice.AutoSize = true;
+            this.lblCodice.Location = new System.Drawing.Point(6, 31);
+            this.lblCodice.Name = "lblCodice";
+            this.lblCodice.Size = new System.Drawing.Size(44, 15);
+            this.lblCodice.TabIndex = 1;
+            this.lblCodice.Text = "Codice";
             // 
             // lblArticoli
             // 
@@ -115,36 +145,6 @@
             this.lblArticoli.Size = new System.Drawing.Size(45, 15);
             this.lblArticoli.TabIndex = 1;
             this.lblArticoli.Text = "Articoli";
-            this.lblArticoli.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txtCodice
-            // 
-            this.txtCodice.Location = new System.Drawing.Point(56, 31);
-            this.txtCodice.Name = "txtCodice";
-            this.txtCodice.Size = new System.Drawing.Size(100, 23);
-            this.txtCodice.TabIndex = 4;
-            // 
-            // txtDescrizione
-            // 
-            this.txtDescrizione.Location = new System.Drawing.Point(79, 65);
-            this.txtDescrizione.Name = "txtDescrizione";
-            this.txtDescrizione.Size = new System.Drawing.Size(100, 23);
-            this.txtDescrizione.TabIndex = 2;
-            // 
-            // txtPrezzo
-            // 
-            this.txtPrezzo.Location = new System.Drawing.Point(53, 138);
-            this.txtPrezzo.Name = "txtPrezzo";
-            this.txtPrezzo.Size = new System.Drawing.Size(100, 23);
-            this.txtPrezzo.TabIndex = 2;
-            // 
-            // cmbUnitaDiMisura
-            // 
-            this.cmbUnitaDiMisura.FormattingEnabled = true;
-            this.cmbUnitaDiMisura.Location = new System.Drawing.Point(99, 105);
-            this.cmbUnitaDiMisura.Name = "cmbUnitaDiMisura";
-            this.cmbUnitaDiMisura.Size = new System.Drawing.Size(121, 23);
-            this.cmbUnitaDiMisura.TabIndex = 5;
             // 
             // cmbVisualizzaArticoli
             // 
@@ -153,21 +153,32 @@
             this.cmbVisualizzaArticoli.Name = "cmbVisualizzaArticoli";
             this.cmbVisualizzaArticoli.Size = new System.Drawing.Size(172, 23);
             this.cmbVisualizzaArticoli.TabIndex = 2;
+            this.cmbVisualizzaArticoli.SelectedIndexChanged += new System.EventHandler(this.cmbVisualizzaArticoli_SelectedIndexChanged);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(429, 98);
+            this.listBox1.Location = new System.Drawing.Point(432, 82);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(175, 169);
+            this.listBox1.Size = new System.Drawing.Size(175, 184);
             this.listBox1.TabIndex = 3;
+            // 
+            // btnLista
+            // 
+            this.btnLista.Location = new System.Drawing.Point(610, 53);
+            this.btnLista.Name = "btnLista";
+            this.btnLista.Size = new System.Drawing.Size(47, 23);
+            this.btnLista.TabIndex = 4;
+            this.btnLista.Text = "...";
+            this.btnLista.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLista);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.cmbVisualizzaArticoli);
             this.Controls.Add(this.lblArticoli);
@@ -197,5 +208,6 @@
         private TextBox txtCodice;
         private ComboBox cmbVisualizzaArticoli;
         private ListBox listBox1;
+        private Button btnLista;
     }
 }
