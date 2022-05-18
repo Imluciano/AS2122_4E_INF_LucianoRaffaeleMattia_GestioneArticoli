@@ -195,7 +195,7 @@
             this.Controls.Add(this.lblArticoli);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AS2122_4E_INF_LucianoRaffaeleMattia_18/05/2022_GestioneArticoli";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
