@@ -11,7 +11,7 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
         public string codice;
         public string descrizione;
         public string unitadimisura;
-        public int prezzo;
+        public double prezzo;
 
         public Articoli(string codice, string descrizione, string unitadimisura, double prezzo)
         { 
@@ -20,6 +20,11 @@ namespace AS2122_4E_INF_LucianoRaffaeleMattia_GestioneArticoli
             this.unitadimisura = unitadimisura;
             this.prezzo = prezzo;
 
+        
         }
+        public string Codice {get};
+        public string Descrizione {get};
+        public string Unitadimisura { get};
+        public double Prezzo {get};
     }
 }
