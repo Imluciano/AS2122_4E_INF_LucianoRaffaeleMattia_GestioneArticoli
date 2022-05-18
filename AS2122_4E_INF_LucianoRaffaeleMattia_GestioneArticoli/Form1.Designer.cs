@@ -28,12 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblCodice = new System.Windows.Forms.Label();
+            this.lblDescrizione = new System.Windows.Forms.Label();
+            this.lblUnitadiMisura = new System.Windows.Forms.Label();
+            this.lblPrezzo = new System.Windows.Forms.Label();
+            this.btnAggiungi = new System.Windows.Forms.Button();
+            this.lblArticoli = new System.Windows.Forms.Label();
+            this.txtCodice = new System.Windows.Forms.TextBox();
+            this.txtDescrizione = new System.Windows.Forms.TextBox();
+            this.txtPrezzo = new System.Windows.Forms.TextBox();
+            this.cmbUnitaDiMisura = new System.Windows.Forms.ComboBox();
+            this.cmbVisualizzaArticoli = new System.Windows.Forms.ComboBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cmbUnitaDiMisura);
+            this.groupBox1.Controls.Add(this.txtPrezzo);
+            this.groupBox1.Controls.Add(this.txtDescrizione);
+            this.groupBox1.Controls.Add(this.txtCodice);
+            this.groupBox1.Controls.Add(this.btnAggiungi);
+            this.groupBox1.Controls.Add(this.lblDescrizione);
+            this.groupBox1.Controls.Add(this.lblUnitadiMisura);
+            this.groupBox1.Controls.Add(this.lblPrezzo);
+            this.groupBox1.Controls.Add(this.lblCodice);
+            this.groupBox1.Location = new System.Drawing.Point(31, 30);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(302, 241);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dettagli articolo";
+            // 
+            // lblCodice
+            // 
+            this.lblCodice.AutoSize = true;
+            this.lblCodice.Location = new System.Drawing.Point(6, 31);
+            this.lblCodice.Name = "lblCodice";
+            this.lblCodice.Size = new System.Drawing.Size(44, 15);
+            this.lblCodice.TabIndex = 1;
+            this.lblCodice.Text = "Codice";
+            // 
+            // lblDescrizione
+            // 
+            this.lblDescrizione.AutoSize = true;
+            this.lblDescrizione.Location = new System.Drawing.Point(6, 68);
+            this.lblDescrizione.Name = "lblDescrizione";
+            this.lblDescrizione.Size = new System.Drawing.Size(67, 15);
+            this.lblDescrizione.TabIndex = 1;
+            this.lblDescrizione.Text = "Descrizione";
+            // 
+            // lblUnitadiMisura
+            // 
+            this.lblUnitadiMisura.AutoSize = true;
+            this.lblUnitadiMisura.Location = new System.Drawing.Point(6, 108);
+            this.lblUnitadiMisura.Name = "lblUnitadiMisura";
+            this.lblUnitadiMisura.Size = new System.Drawing.Size(87, 15);
+            this.lblUnitadiMisura.TabIndex = 2;
+            this.lblUnitadiMisura.Text = "Unità di misura";
+            // 
+            // lblPrezzo
+            // 
+            this.lblPrezzo.AutoSize = true;
+            this.lblPrezzo.Location = new System.Drawing.Point(6, 146);
+            this.lblPrezzo.Name = "lblPrezzo";
+            this.lblPrezzo.Size = new System.Drawing.Size(41, 15);
+            this.lblPrezzo.TabIndex = 3;
+            this.lblPrezzo.Text = "Prezzo";
+            // 
+            // btnAggiungi
+            // 
+            this.btnAggiungi.Location = new System.Drawing.Point(65, 170);
+            this.btnAggiungi.Name = "btnAggiungi";
+            this.btnAggiungi.Size = new System.Drawing.Size(150, 41);
+            this.btnAggiungi.TabIndex = 1;
+            this.btnAggiungi.Text = "Aggiungi/modifica articolo";
+            this.btnAggiungi.UseVisualStyleBackColor = true;
+            // 
+            // lblArticoli
+            // 
+            this.lblArticoli.AutoSize = true;
+            this.lblArticoli.Location = new System.Drawing.Point(31, 287);
+            this.lblArticoli.Name = "lblArticoli";
+            this.lblArticoli.Size = new System.Drawing.Size(45, 15);
+            this.lblArticoli.TabIndex = 1;
+            this.lblArticoli.Text = "Articoli";
+            this.lblArticoli.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // txtCodice
+            // 
+            this.txtCodice.Location = new System.Drawing.Point(56, 31);
+            this.txtCodice.Name = "txtCodice";
+            this.txtCodice.Size = new System.Drawing.Size(100, 23);
+            this.txtCodice.TabIndex = 4;
+            // 
+            // txtDescrizione
+            // 
+            this.txtDescrizione.Location = new System.Drawing.Point(79, 65);
+            this.txtDescrizione.Name = "txtDescrizione";
+            this.txtDescrizione.Size = new System.Drawing.Size(100, 23);
+            this.txtDescrizione.TabIndex = 2;
+            // 
+            // txtPrezzo
+            // 
+            this.txtPrezzo.Location = new System.Drawing.Point(53, 138);
+            this.txtPrezzo.Name = "txtPrezzo";
+            this.txtPrezzo.Size = new System.Drawing.Size(100, 23);
+            this.txtPrezzo.TabIndex = 2;
+            // 
+            // cmbUnitaDiMisura
+            // 
+            this.cmbUnitaDiMisura.FormattingEnabled = true;
+            this.cmbUnitaDiMisura.Location = new System.Drawing.Point(99, 105);
+            this.cmbUnitaDiMisura.Name = "cmbUnitaDiMisura";
+            this.cmbUnitaDiMisura.Size = new System.Drawing.Size(121, 23);
+            this.cmbUnitaDiMisura.TabIndex = 5;
+            // 
+            // cmbVisualizzaArticoli
+            // 
+            this.cmbVisualizzaArticoli.FormattingEnabled = true;
+            this.cmbVisualizzaArticoli.Location = new System.Drawing.Point(432, 53);
+            this.cmbVisualizzaArticoli.Name = "cmbVisualizzaArticoli";
+            this.cmbVisualizzaArticoli.Size = new System.Drawing.Size(172, 23);
+            this.cmbVisualizzaArticoli.TabIndex = 2;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(429, 98);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(175, 169);
+            this.listBox1.TabIndex = 3;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.cmbVisualizzaArticoli);
+            this.Controls.Add(this.lblArticoli);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private GroupBox groupBox1;
+        private Button btnAggiungi;
+        private Label lblDescrizione;
+        private Label lblUnitadiMisura;
+        private Label lblPrezzo;
+        private Label lblCodice;
+        private Label lblArticoli;
+        private ComboBox cmbUnitaDiMisura;
+        private TextBox txtPrezzo;
+        private TextBox txtDescrizione;
+        private TextBox txtCodice;
+        private ComboBox cmbVisualizzaArticoli;
+        private ListBox listBox1;
     }
 }
